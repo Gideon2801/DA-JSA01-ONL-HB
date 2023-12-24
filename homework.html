@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let cart = [["Táo", 10], ["Cam", 15]]
+
+        console.log(cart.length);
+        console.log(cart);
+
+        let qua = cart[0]   //mảng quả gì đó
+
+        for (let index = 0; index < cart.length; index++) {
+            const element = cart[index];
+            console.log("Tôi có", element[1], "quả", element[0]);
+        }
+
+        let i = 0
+        while (i < cart.length) {
+            const element = cart[i];
+            console.log("Tôi có", element[1], "quả", element[0]);
+            i++
+        }
+
+        let j = 0
+        do {
+            const element = cart[j];
+            console.log("Tôi có", element[1], "quả", element[0]);
+            j++
+        } while (j < cart.length);
+
+        let Husky = {
+            name: "Ngáo",
+            leg: 4,
+            color: "Brown"
+        }
+
+    </script>
+</body>
+
+</html>
