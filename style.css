@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(163, 170, 177);
+}
+.nav-search {
+    text-align: center;
+}
+
+.nav-search input:focus {
+    color: chocolate;
+}
+
+.nav-search i {
+    background-color: rgb(83, 83, 221);
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+    gap: 10px;
+    margin: 0 100px;
+}
+
+.item {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+h4{
+    margin: 0;
+}
+
+.img-product {
+    width: 100%;
+}
