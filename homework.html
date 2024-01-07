@@ -9,38 +9,47 @@
 
 <body>
     <script>
-        let cart = [["Táo", 10], ["Cam", 15]]
-
-        console.log(cart.length);
-        console.log(cart);
-
-        let qua = cart[0]   //mảng quả gì đó
-
-        for (let index = 0; index < cart.length; index++) {
-            const element = cart[index];
-            console.log("Tôi có", element[1], "quả", element[0]);
+        // Câu 2
+        // Xài for bình thường
+        let myArr = [9, 7, 9, 0, 7, 8, 387, 123, 456]
+        for (let index = 0; index < myArr.length; index++) {
+            if (myArr[index] % 2 == 0 || myArr[index] == 0) {
+                console.log(myArr[index]);
+            }
         }
 
-        let i = 0
-        while (i < cart.length) {
-            const element = cart[i];
-            console.log("Tôi có", element[1], "quả", element[0]);
-            i++
+        // Xài for..of: dùng để lấy từng giá trị trong mảng
+        for (const value of myArr) {
+            if (value % 2 == 0 || value == 0) {
+                console.log(value);
+            }
         }
 
-        let j = 0
-        do {
-            const element = cart[j];
-            console.log("Tôi có", element[1], "quả", element[0]);
-            j++
-        } while (j < cart.length);
+        // Câu 3
+        // let myAnswer = []
+        // let answer = prompt("Em đã ăn cơm chưa?")
+        // myAnswer.push(answer)
 
-        let Husky = {
-            name: "Ngáo",
-            leg: 4,
-            color: "Brown"
+        // if (answer == "Yes") {
+        //     myAnswer.push(prompt("Em có muốn ăn bánh ngọt tráng miệng không?"))
+        // } else {
+        //     myAnswer.push(prompt("Em muốn ăn cơm với sườn xào chua ngọt không?"))
+        // }
+
+        // console.log(myAnswer);
+
+        // Câu 1    
+        let n = 8
+        for (let index = 1; index <= n; index++) {
+            let output = ''
+            for (let i = 1; i <= n - index; i++) {
+                output += ' '
+            }
+            for (let j = 1; j <= 2 * index - 1; j++){
+                output += 1
+            }
+            console.log(output);     
         }
-
     </script>
 </body>
 
