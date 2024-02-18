@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Bài 1
+        function equation(a, b) {
+            // ax + b = 0
+            let x = -b / a
+            console.log(`Nghiệm của phương trình ${a}x + ${b} = 0 là: ${x}`);
+        }
+
+        //Bài 2
+        const TGV = (a, b) => {
+            // Tính cạnh huyền
+            let canhHuyen = Math.sqrt(a * a + b * b)
+            // a.h = b.c => h = b.c/a 
+            let duongCao = (a * b) / canhHuyen
+            console.log(`Cạnh huyền: ${canhHuyen}`);
+            console.log(`Đường cao: ${duongCao}`);
+            console.log("Số đo của 2 góc bên: 90 độ");
+        }
+
+        TGV(3,4)
+
+    </script>
+</body>
+
+</html>
