@@ -66,6 +66,7 @@ fistForm.addEventListener("submit", (e) => {
                     pw: pw.value.trim()
                 })
                 localStorage.setItem("users", JSON.stringify(users))
+                container.classList.remove("right-panel-active");
             }
         } else {
             localStorage.setItem("users",
